@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" type="Image/png" href="Images/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="CSS/global.css" />
+  <link rel="stylesheet" href="CSS/orderstyle.css">
+  <link rel="stylesheet" href="CSS/checkout.css" />
+  <title>Groceries Supermarket | Checkout</title>
+</head>
+<body>
+  <header>
+    <h1 class="logo">GroceriesSM</h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="dairyproducts.html">Products</a></li>
+        <li><a href="order.html">Orders</a></li>
+        <li><a href="loyalty.html">Loyalty</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </header>
+
+  <main>
+    <section class="intro-section">
+      <h2>Checkout</h2>
+    </section>
+    
+    <section class="order-section">
+      <h3>Order Summary</h3>
+      <table id="order-summary-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+      <h3>Total Price: $<span id="total-price">0.00</span></h3>
+      
+      <form id="checkout-form">
+        <h3>Personal Information</h3>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="address">Delivery Address:</label>
+          <input type="text" id="address" name="address" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        
+        <h3>Payment Information</h3>
+        <div>
+          <label for="payment">Payment Method:</label>
+          <select id="payment" name="payment" required>
+            <option value="credit-card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="cash-on-delivery">Cash on Delivery</option>
+          </select>
+        </div>
+        <div id="credit-card-info" style="display: none;">
+          <label for="card-number">Card Number:</label>
+          <input type="text" id="card-number" name="card-number">
+          <label for="expiry-date">Expiry Date:</label>
+          <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY">
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv">
+        </div>
+        
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Groceries Supermarket</p>
+  </footer>
+
+  <script src="checkout.js"></script>
+</body>
+</html>
