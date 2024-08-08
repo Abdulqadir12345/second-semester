@@ -1,0 +1,86 @@
+/* Global Styles for Checkout Page */
+  
+  .intro-section {
+    text-align: center;
+    margin: 2em 0;
+  }
+  
+  .order-section {
+    background-color: white;
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .order-section h3 {
+    margin-top: 0;
+  }
+  
+  #order-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+  }
+  
+  #order-summary-table th, #order-summary-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #order-summary-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  form div {
+    margin-bottom: 1em;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  form input, form select {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #credit-card-info label, #credit-card-info input {
+    width: 48%;
+    display: inline-block;
+  }
+  
+  #credit-card-info label {
+    margin-right: 4%;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  .submit{
+    background-color: green ;
+  }
+  
+  @media (max-width: 600px) {
+    #credit-card-info label, #credit-card-info input {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  

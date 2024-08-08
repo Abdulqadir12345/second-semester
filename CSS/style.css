@@ -1,0 +1,168 @@
+.first-section {
+  position: relative;
+  top: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(
+      180deg,
+      rgb(20, 63, 23),
+      rgba(50, 205, 50, 0.512),
+      rgba(255, 255, 255, 0.49)
+    ),
+    url(../Images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  color: white;
+}
+.first-section .content {
+  width: 75%;
+  padding-bottom: 25px;
+  text-align: center;
+  color: var(--light-text-color);
+}
+.first-section .content h1 {
+  margin-top: 20px;
+  font-size: var(--heading-size);
+}
+.first-section .services {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.first-section .services .service {
+  width: 75%;
+  margin: 10px;
+  padding: 15px 30px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  border: 1px solid var(--second-color);
+}
+.first-section .services .service h3 {
+  font-size: var(--sub-heading-font);
+  color: var(--first-color);
+}
+.first-section .services .service p {
+  font-size: var(--text-size);
+  color: var(--light-text-color);
+}
+.first-section .content a {
+  text-decoration: none;
+  color: var(--light-text-color);
+  font-size: var(--text-size);
+  font-weight: bold;
+  border-radius: 45px;
+  padding: 15px 20px;
+  background-color: var(--first-color);
+}
+.first-section .content a:hover {
+  letter-spacing: 3px;
+  background: var(--second-color);
+  color: var(--dark-text-color);
+  transition: 0.5s;
+}
+
+.second-section {
+  padding: 40px;
+  margin-top: 40px;
+}
+.third-section,
+.fourth-section {
+  padding: 0 40px;
+  margin-bottom: 20px;
+}
+.second-section .content,
+.third-section .content,
+.fourth-section .content {
+  text-align: center;
+}
+.second-section .content .products,
+.third-section .content .services,
+.fourth-section .content .offers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.second-section .content .products .product,
+.third-section .content .services .service,
+.fourth-section .content .offers .offer {
+  width: 30%;
+  margin: 10px;
+  padding: 15px 30px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  border: 1px solid var(--second-color);
+}
+
+.second-section .content .products .product h3,
+.third-section .content .services .service h3,
+.fourth-section .content .offers .offer h3 {
+  font-size: var(--sub-heading-font);
+  color: var(--first-color);
+}
+
+.second-section .content .products .product p,
+.third-section .content .services .service p,
+.fourth-section .content .offers .offer p {
+  margin-bottom: 30px;
+}
+
+.second-section .content .products .product a {
+  text-decoration: none;
+  color: var(--light-text-color);
+  font-size: var(--text-size);
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: var(--first-color);
+  border-radius: 5px;
+}
+
+.second-section .content .products .product a:hover {
+  letter-spacing: 3px;
+  background: var(--second-color);
+  color: var(--dark-text-color);
+  transition: 0.5s;
+}
+
+.second-section .content .products .product img,
+.third-section .content .services .service img,
+.fourth-section .content .offers .offer img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 650px) {
+  :root {
+    --heading-size: 40px;
+    --sub-heading-size: 22px;
+    --text-size: 14px;
+  }
+  .first-section .services {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .first-section .services .service {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  :root {
+    --heading-size: 40px;
+    --sub-heading-size: 24px;
+    --text-size: 16px;
+  }
+  .first-section .services .service {
+    width: 20%;
+  }
+}

@@ -1,0 +1,87 @@
+.intro-section,
+.first-section {
+  position: relative;
+  top: 65px;
+  padding: 20px;
+}
+
+.first-section {
+  top: 20px;
+}
+
+h2 {
+  font-size: var(--heading-size);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: var(--text-size);
+  margin-bottom: 5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: var(--second-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: var(--sub-heading-size);
+  color: var(--first-color);
+}
+
+.order-link {
+  display: block;
+  width: max-content;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: var(--first-color);
+  color: var(--light-text-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: var(--sub-heading-size);
+}
+
+.order-link:hover {
+  background-color: var(--dark-text-color);
+  transition: background-color 0.3s ease;
+}
+
+.additional-links-section {
+  margin: 20px 0;
+}
+
+.additional-links-section a {
+  text-decoration: none;
+  background-color: var(--first-color);
+  color: var(--light-text-color);
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  font-size: var(--sub-heading-size);
+  transition: background-color 0.3s ease;
+}
+
+.additional-links-section a:hover {
+  background-color: var(--dark-text-color);
+  transition: background-color 0.3s ease;
+}

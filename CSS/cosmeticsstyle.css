@@ -1,0 +1,101 @@
+.intro-section,
+.first-section {
+  position: relative;
+  top: 65px;
+  padding: 20px;
+}
+
+.first-section {
+  top: 20px;
+}
+
+h2 {
+  font-size: var(--heading-size);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: var(--text-size);
+  margin-bottom: 5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid var(--first-color);
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid var(--first-color);
+  padding: 10px;
+  text-align: center;
+}
+
+.product-table td img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #143f17;
+}
+
+.product-table th {
+  background-color: #143f17;
+  color: white;
+}
+
+.product-table tr:nth-child(odd) {
+  background-color: var(--second-color);
+}
+
+.product-table tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.order-link {
+  display: block;
+  width: max-content;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: var(--first-color);
+  color: var(--light-text-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: var(--sub-heading-size);
+}
+
+.order-link:hover {
+  background-color: var(--dark-text-color);
+  transition: background-color 0.3s ease;
+}
+
+.additional-links-section {
+  margin: 20px 0;
+}
+
+.additional-links-section a {
+  text-decoration: none;
+  background-color: var(--first-color);
+  color: var(--light-text-color);
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  font-size: var(--sub-heading-size);
+  transition: background-color 0.3s ease;
+}
+
+.additional-links-section a:hover {
+  background-color: var(--dark-text-color);
+  transition: background-color 0.3s ease;
+}

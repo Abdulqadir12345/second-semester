@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" type="Image/png" href="Images/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="CSS/global.css" />
+  <link rel="stylesheet" href="CSS/orderstyle.css" />
+  <title>Groceries Supermarket | Orders</title>
+</head>
+<body>
+  <header>
+    <h1 class="logo">GroceriesSM</h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="dairyproducts.html">Products</a></li>
+        <li><a href="order.html" class="active">Orders</a></li>
+        <li><a href="loyalty.html">Loyalty</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </header>
+
+  <main>
+    <section class="intro-section">
+      <h2>Order Your Products</h2>
+    </section>
+    
+    <section class="order-section">
+      <form id="order-form">
+        <div class="product-category">
+          <h3>Fruits</h3>
+          <div>
+            <label for="apple">Apple</label>
+            <input type="number" id="apple" name="apple" placeholder="kg" min="0" step="0.1" data-price="3.0">
+          </div>
+          <div>
+            <label for="banana">Banana</label>
+            <input type="number" id="banana" name="banana" placeholder="kg" min="0" step="0.1" data-price="1.5">
+          </div>
+          <div>
+            <label for="oranges">Oranges</label>
+            <input type="number" id="oranges" name="oranges" placeholder="kg" min="0" step="0.1" data-price="2.0">
+          </div>
+          <div>
+            <label for="avocado">Avocado</label>
+            <input type="number" id="avocado" name="avocado" placeholder="kg" min="0" step="0.1" data-price="4.5">
+          </div>
+          <div>
+            <label for="guava">Guava</label>
+            <input type="number" id="guava" name="guava" placeholder="kg" min="0" step="0.1" data-price="1.5">
+          </div>
+          <div>
+            <label for="pineapple">Pineapple</label>
+            <input type="number" id="pineapple" name="pineapple" placeholder="kg" min="0" step="0.1" data-price="1.0">
+          </div>
+        </div>
+
+        <div class="product-category">
+          <h3>Vegetables</h3>
+          <div>
+            <label for="carrot">Carrot</label>
+            <input type="number" id="carrot" name="carrot" placeholder="kg" min="0" step="0.1" data-price="2.0">
+          </div>
+          <div>
+            <label for="tomato">Tomato</label>
+            <input type="number" id="tomato" name="tomato" placeholder="kg" min="0" step="0.1" data-price="2.5">
+          </div>
+          <div>
+            <label for="potato">Potato</label>
+            <input type="number" id="potato" name="potato" placeholder="kg" min="0" step="0.1" data-price="2.5">
+          </div>
+          <div>
+            <label for="brinjal">Brinjal</label>
+            <input type="number" id="brinjal" name="brinjal" placeholder="kg" min="0" step="0.1" data-price="2.0">
+          </div>
+          <div>
+            <label for="onion">Onion</label>
+            <input type="number" id="onion" name="onion" placeholder="kg" min="0" step="0.1" data-price="1.5">
+          </div>
+          <div>
+            <label for="garlic">Garlic</label>
+            <input type="number" id="garlic" name="garlic" placeholder="kg" min="0" step="0.1" data-price="2.3">
+          </div>
+        </div>
+
+        <div class="product-category">
+          <h3>Dairy Produce</h3>
+          <div>
+            <label for="milk">Milk</label>
+            <input type="number" id="milk" name="milk" placeholder="quantity" min="0" step="1" data-price="1.2">
+          </div>
+          <div>
+            <label for="cheese">Cheese</label>
+            <input type="number" id="cheese" name="cheese" placeholder="quantity" min="0" step="1" data-price="3.5">
+          </div>
+          <div>
+            <label for="cream">Cream</label>
+            <input type="number" id="cream" name="cream" placeholder="quantity" min="0" step="1" data-price="1.2">
+          </div>
+          <div>
+            <label for="yogurt">Yogurt</label>
+            <input type="number" id="yogurt" name="yogurt" placeholder="quantity" min="0" step="1" data-price="1.5">
+          </div>
+          <div>
+            <label for="custard">Custard</label>
+            <input type="number" id="custard" name="custard" placeholder="quantity" min="0" step="1" data-price="2.2">
+          </div>
+          <div>
+            <label for="butter">Butter</label>
+            <input type="number" id="butter" name="butter" placeholder="quantity" min="0" step="1" data-price="2.8">
+          </div>
+        </div>
+
+        <div class="product-category">
+          <h3>Meat and Seafood</h3>
+          <div>
+            <label for="chicken">Chicken</label>
+            <input type="number" id="chicken" name="chicken" placeholder="kg" min="0" step="0.1" data-price="6.0">
+          </div>
+          <div>
+            <label for="fish">Fish</label>
+            <input type="number" id="fish" name="fish" placeholder="kg" min="0" step="0.1" data-price="8.0">
+          </div>
+          <div>
+            <label for="beef">Beef</label>
+            <input type="number" id="beef" name="beef" placeholder="kg" min="0" step="0.1" data-price="10.0">
+          </div>
+          <div>
+            <label for="mutton">Mutton</label>
+            <input type="number" id="mutton" name="mutton" placeholder="kg" min="0" step="0.1" data-price="8.0">
+          </div>
+          <div>
+            <label for="crabs">Crabs</label>
+            <input type="number" id="crabs" name="crabs" placeholder="kg" min="0" step="0.1" data-price="12.0">
+          </div>
+          <div>
+            <label for="prawns">Prawns</label>
+            <input type="number" id="prawns" name="prawns" placeholder="kg" min="0" step="0.1" data-price="6.0">
+          </div>
+        </div>
+
+        <div class="product-category">
+          <h3>Baking and Cooking Ingredients</h3>
+          <div>
+            <label for="flour">Flour</label>
+            <input type="number" id="flour" name="flour" placeholder="kg" min="0" step="0.1" data-price="1.0">
+          </div>
+          <div>
+            <label for="sugar">Sugar</label>
+            <input type="number" id="sugar" name="sugar" placeholder="kg" min="0" step="0.1" data-price="1.5">
+          </div>
+          <div>
+            <label for="salt">Salt</label>
+            <input type="number" id="salt" name="salt" placeholder="kg" min="0" step="0.1" data-price="0.8">
+          </div>
+          <div>
+            <label for="butter">Butter</label>
+            <input type="number" id="butter" name="butter" placeholder="kg" min="0" step="0.1" data-price="2.5">
+          </div>
+          <div>
+            <label for="bakingpowder">Baking Powder</label>
+            <input type="number" id="bakingpowder" name="bakingpowder" placeholder="kg" min="0" step="0.1" data-price="3.0">
+          </div>
+          <div>
+            <label for="vanilla">Vanilla Extract</label>
+            <input type="number" id="vanilla" name="vanilla" placeholder="ml" min="0" step="1" data-price="5.0">
+          </div>
+        </div>
+
+        <button type="button" id="add-to-cart">Add to Cart</button>
+        <button type="button" id="add-to-favourites">Add to Favourites</button>
+        <button type="button" id="apply-favourites">Apply Favourites</button>
+        <button type="button" id="buy-now">Buy Now</button> <!-- Buy Now button added -->
+      </form>
+
+      <section class="cart-section">
+        <h2>Your Cart</h2>
+        <table id="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price per Unit</th>
+              <th>Total Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+        <h3>Total Price: $<span id="total-price">0.00</span></h3>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Groceries Supermarket. All rights reserved.</p>
+  </footer>
+
+  <script src="order.js"></script>
+  <script src="checkout.js"></script>
+</body>
+</html>

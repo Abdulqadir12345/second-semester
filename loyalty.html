@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="Image/png" href="Images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="CSS/global.css" />
+    <link rel="stylesheet" href="CSS/loyaltystyle.css" />
+    <title>Groceries Supermarket | Loyalty Program</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">GrociesSM</h1>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="dairyproducts.html">Products</a></li>
+          <li><a href="order.html">Orders</a></li>
+          <li><a href="loyalty.html" class="active">Loyalty</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </header>
+    <main>
+      <section class="intro-section">
+        <h2>Join Our Loyalty Program</h2>
+        <p>
+          Become a member of our loyalty program and enjoy exclusive benefits
+          and rewards. Choose from our three loyalty schemes and start saving
+          today!
+        </p>
+      </section>
+
+      <div class="schemes-section">
+        <section class="benefits-section">
+          <h2>Loyalty Schemes and Benefits</h2>
+          <div class="schemes">
+            <div class="scheme">
+              <h3>Bronze Membership - 10000 LKR/year</h3>
+              <ul>
+                <li>5% off on all purchases</li>
+                <li>Exclusive member-only discounts</li>
+                <li>Monthly newsletter</li>
+              </ul>
+            </div>
+            <div class="scheme">
+              <h3>Silver Membership - 25000 LKR/year</h3>
+              <ul>
+                <li>10% off on all purchases</li>
+                <li>Priority customer support</li>
+                <li>Access to special events</li>
+              </ul>
+            </div>
+            <div class="scheme">
+              <h3>Gold Membership - 50000 LKR/year</h3>
+              <ul>
+                <li>20% off on all purchases</li>
+                <li>Free delivery on all orders</li>
+                <li>Exclusive access to new products</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <h2>Register for the Loyalty Program</h2>
+          <form action="submit_form.php" method="post">
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="address">Address:</label>
+              <input type="text" id="address" name="address" required />
+            </div>
+            <div class="form-group">
+              <label for="scheme">Select Loyalty Scheme:</label>
+              <select id="scheme" name="scheme" required>
+                <option value="bronze">
+                  Bronze Membership - 10000 LKR/year
+                </option>
+                <option value="silver">
+                  Silver Membership - 25000 LKR/year
+                </option>
+                <option value="gold">Gold Membership - 50000 LKR/year</option>
+              </select>
+            </div>
+            <button type="submit">Register</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <p>&copy; 2024 Abdul Qadir. All Rights Reserved.</p>
+      </div>
+      <div class="footer">
+        <p>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </p>
+        <p>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </p>
+        <p>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </p>
+        <p>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </p>
+      </div>
+      <div class="footer">
+        <p><a href="#">Privacy Policy</a></p>
+        <p><a href="#">Terms of Use</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
